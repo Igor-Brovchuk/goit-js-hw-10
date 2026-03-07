@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#datetime-picker {
+  margin: 32px 0 32px 0;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+#datetime-picker:hover {
+  border: 1px solid #000;
+}
+#datetime-picker:focus,
+#datetime-picker.flatpickr-input.active {
+  border: 1px solid #4e75ff;
+  outline: none;
+}
+#datetime-picker:disabled {
+  color: #808080;
+  background: #fafafa;
+}
+
+button[data-start] {
+  border-radius: 8px;
+  padding-block: 8px;
+  padding-inline: 16px;
+  width: 75px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+}
+button[data-start]:hover {
+  background: #6c8cff;
+}
+button[data-start]:disabled {
+  background: #cfcfcf;
+  color: #989898;
+}
+
+.flatpickr-calendar {
+  background: #f5f5f5;
+}
+
+.flatpickr-day.today {
+  border: 1px solid #4e75ff;
+}
+
+.flatpickr-day {
+  background: #f5f5f5;
+  color: #666;
+}
+.flatpickr-day:hover {
+  background: #c1c1c1;
+}
+
+.flatpickr-day.selected {
+  background: #4e75ff;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  width: 346px;
+  height: 72px;
+  margin: 0 auto;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.value {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
