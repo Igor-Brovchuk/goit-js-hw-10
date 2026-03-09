@@ -20,13 +20,19 @@ form.addEventListener('submit', e => {
   });
   promise
     .then(delay => {
-      iziToast.success({
+      iziToast.show({
         message: `✅ Fulfilled promise in ${delay}ms`,
+        messageColor: '#fff',
+        backgroundColor: '#59a10d',
+        position: 'topRight',
       });
     })
     .catch(delay => {
-      iziToast.error({
+      iziToast.show({
         message: `❌ Rejected promise in ${delay}ms`,
+        messageColor: '#fff',
+        backgroundColor: '#ef4040',
+        position: 'topRight',
       });
     });
 });
